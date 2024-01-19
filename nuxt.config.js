@@ -1,5 +1,3 @@
-import vuetifyOptions from "./plugins/vuetify.options";
-
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -25,15 +23,21 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxtjs/vuetify"],
+  buildModules: ["@nuxtjs/vuetify", "@nuxtjs/eslint-module"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
+
+  // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
+  vuetify: {
+    customVariables: ["~/assets/sass/variables.sass"],
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     extractCSS: {
       ignoreOrder: true,
     },
+    extend(config, ctx) {},
   },
 };
