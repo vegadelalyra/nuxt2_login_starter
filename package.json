@@ -11,9 +11,7 @@
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.12.3",
     "core-js": "^3.35.0",
+    "minify-css-string": "^1.0.0",
     "nuxt": "^2.17.3"
-  },
-  "dependencies": {
-    "@nuxtjs/eslint-module": "^4.1.0"
   }
 }
